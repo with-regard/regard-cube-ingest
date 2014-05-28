@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="regard_cube_collector" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-01.2.3">
+  <WorkerRole name="CubeWorkerRole" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="Regard.ServiceBus.ConnectionString" />
+      <Setting name="Regard.ServiceBus.EventTopic" />
+      <Setting name="Regard.ServiceBus.SubscriptionName" />
+      <Setting name="Regard.Cube.Endpoint" />
+    </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>

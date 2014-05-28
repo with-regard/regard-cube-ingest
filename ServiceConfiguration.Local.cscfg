@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="regard_cube_collector" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-01.2.3">
+  <Role name="CubeWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="" />
+      <Setting name="Regard.ServiceBus.ConnectionString" value="" />
+      <Setting name="Regard.ServiceBus.EventTopic" value=""/>
+      <Setting name="Regard.ServiceBus.SubscriptionName" value=""/>
+      <Setting name="Regard.Cube.Endpoint" value=""/>
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
